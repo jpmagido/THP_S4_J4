@@ -9,13 +9,15 @@
 require 'faker'
 
 22.times do |variable|
-	#User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: "Bonjour, je suis un mongol de type martien qui débarque sur Terre", email: Faker::Internet.email, age: Faker::Number.within(10..80), city_id: Faker::Number.within(1..13))
+	User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: "Bonjour, je suis un mongol de type martien qui débarque sur Terre", email: Faker::Internet.email, age: Faker::Number.within(10..80), city_id: Faker::Number.within(1..13))
 	#City.create!(name: Faker::Address.city, zip_code: "#{Faker::Number.within(10..95)}000")
 	#Gossip.create!(title: "#{Faker::Book.title}", content: "#{Faker::Movie.quote}", user_id: Faker::Number.within(1..13))
 	#Tag.create!(title: "##{Faker::Hipster.word}")
 	#JoinTableTagGossip.create!(tag_id: Faker::Number.within(1..12), gossip_id: Faker::Number.unique.within(1..22))
-	PrivateMessage.create!(content: "Salut mon grand bandit !! tu veux me faire les fesses ? :D", sender_id: Faker::Number.within(1..10), recipient_id: Faker::Number.within(1..10))
+	#PrivateMessage.create!(content: "Salut mon grand bandit !! tu veux me faire les fesses ? :D", sender_id: Faker::Number.within(1..10), recipient_id: Faker::Number.within(1..10))
 
 end
 
 puts "Tâche effectuée"
+
+# retires les # pour run le seed que tu souhaites
