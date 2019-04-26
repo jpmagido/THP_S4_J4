@@ -10,13 +10,18 @@ require 'faker'
 
 10.times do
 	City.create!(name: Faker::Address.city)
+
+end
+puts "Vous avez crée 10 Cities"
+
+10.times do
 	Dog.create!(name: Faker::Name.first_name, city_id: Faker::Number.within(1..10))
 	Dogsitter.create!(name: Faker::Name.first_name, city_id: Faker::Number.within(1..10))
 	Appointment.create!(dog_id: Faker::Number.within(1..10), dogsitter_id: Faker::Number.within(1..10))
 
 end
 
-puts "Vous avez crée 10 Cities"
+
 puts "Vous avez crée 10 Dogs"
 puts "Vous avez crée 10 Dogsitters"
 puts "Vous avez crée 10 Appointments"
