@@ -6,9 +6,9 @@ Projet: Rails - DB
 
 Exo: 
 
-- Doctolib
-- Air_Bnb
-- Gossip_project
+- Doctolib:       app_freedoc
+- Air Bnb:        app_air_bnb
+- Gossip project: app_gossip_project
 
 
 Oussama Bendifallah
